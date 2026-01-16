@@ -12,25 +12,51 @@ dataCatalog:
 
 datasets:
   - identifier: uuidea:alliander-grid-model-data
-    title: Alliander grid
+    title: Alliander grid model data
+    description: |
+      In order to navigate the energy transition, and specifically network congestion, Alliander develops a lot of analysis tools to help them plan and operate the grid more effectiviely. In order to provide these tools with a common source of network data, two teams (one for medium voltage, one for low voltage) publish grid model data conform CGMES, with extensions where neccessary. These datasets are now the source for grid planning, including powerflow simulations and short circuit.
     publisher:
-      name : my name
-    contactPoint: 
-      hasEmail: my.name@example.com
-    status: draft
+      name : Alliander
+    # contactPoint: 
+    #   hasEmail: my.name@example.com
+    status: production
     theme:
       - uuidea:electricity
       - uuidea:grid-model
       - uuidea:IEC-CIM
       - uuidea:cgmes
-
     license:
-      title: "cc-by 4.0"
+      title: propietary
     temporal:
       hasBeginning: 2024-06-01
       # hasEnd: 2025-12-31  
     # inSeries: ex:abcde
     hasPolicy: plcy:confdential
+
+
+  - identifier: uuidea:eminent
+    title: EMINENT interoperability maturyty assessment data
+    description: |
+      During the int:net Horizon Europe project, the EMINENT Interoperability Maturity assessment was developed. This dataset contains the results of all the responses that were provided across different interoperability efforts that were evaluated.
+    publisher:
+      name : int:net project
+    # contactPoint: 
+    #   hasEmail: my.name@example.com
+    status: production
+    theme:
+      - uuidea:electricity
+      - uuidea:interoperability
+    license:
+      title: CC-BY-SA 4.0
+    temporal:
+      hasBeginning: 2024-06-01
+      # hasEnd: 2025-12-31  
+    # inSeries: ex:abcde
+    hasPolicy: plcy:open-information-policy
+    distribution: 
+      identifier: uuidea:eminent-distribution
+      accessURL: https://raw.githubusercontent.com/int-net/EminentResultsDatabase/refs/heads/main/EminentResponses/EminentResponses.ttl
+      format: rdf/turlte    
 
 concepts:
   - prefLabel: Electricity
@@ -51,27 +77,11 @@ concepts:
     identifier: uuidea:grid-model
     definition: A digital model of the power grid
     altLabel: Network Model
+  - preflabel: Interoperability
+    identifier: uuidea:interoperability
+    definition: |
+      “Interoperability refers to the ability of diverse systems, organisations, and individuals to work together seamlessly through shared understanding and mutual compatibility. It is an emergent property that arises from the continuous development and refinement of standards, collaboration among stakeholders, and the dissemination of knowledge across technical, organisational, and societal boundaries.”  
 
-# series:
-#   - identifier: ex:abcde
-#     title: all the datasets by this publisher
-#     publisher:
-#       name: My name
-
-# metrics:
-#   - identifier: ex:fkrhkqewjewrc
-#     prefLabel: example metric
-#     definition: an example of a data quality metric
-#     expectedDataType: xsd:float
-#     inDimension: Completeness
-
-
-# qualityMeasurements:
-#   - identifier: ex:sfasdggfvrln
-#     computedOn: ex:herrcgre
-#     isMeasurementOf: ex:fkrhkqewjewrc
-#     generatedAtTime: 2025-04-22
-#     value: 0.9
 
 policies:
   - uid: plcy:open-information-policy
