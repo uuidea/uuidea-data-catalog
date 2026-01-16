@@ -77,7 +77,7 @@ concepts:
     identifier: uuidea:grid-model
     definition: A digital model of the power grid
     altLabel: Network Model
-  - preflabel: Interoperability
+  - prefLabel: Interoperability
     identifier: uuidea:interoperability
     definition: |
       “Interoperability refers to the ability of diverse systems, organisations, and individuals to work together seamlessly through shared understanding and mutual compatibility. It is an emergent property that arises from the continuous development and refinement of standards, collaboration among stakeholders, and the dissemination of knowledge across technical, organisational, and societal boundaries.”  
