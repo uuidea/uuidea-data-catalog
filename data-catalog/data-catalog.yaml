@@ -20,8 +20,10 @@ datasets:
     status: draft
     theme:
       - uuidea:electricity
-      - ex:bcd 
-      - ex:def
+      - uuidea:grid-model
+      - uuidea:IEC-CIM
+      - uuidea:cgmes
+
     license:
       title: "cc-by 4.0"
     temporal:
@@ -36,12 +38,19 @@ concepts:
     definition: |
       Electricity is the set of physical phenomena associated with the presence and motion of matter possessing an electric charge. Electricity is related to magnetism, both being part of the phenomenon of electromagnetism, as described by Maxwell's equations. Common phenomena are related to electricity, including lightning, static electricity, electric heating, electric discharges and many others. (https://en.wikipedia.org/wiki/Electricity)
     # altLabel: juice
-
-
-  - prefLabel: data
-    identifier: ex:def
-    definition: data is plural of datum
-    altLabel: information (leave a comment ;-))  
+  - prefLabel: IEC-CIM
+    identifier: uuidea:IEC-CIM
+    definition: |
+      A standard for information exchange in the context of power grids. It is the common term for IEC-61970, IEC-61968 and IEC-62325
+    altLabel: IEC Common Information Model
+  - prefLabel: CGMES
+    identifier: uuidea:cgmes
+    definition: The common grid model exchange specification. A standard by the ENTSO-E that specifies the information exchange between TSO's (transmission system operators).
+    altLabel: Common grid model exchange specification
+  - prefLabel: Grid Model
+    identifier: uuidea:grid-model
+    definition: A digital model of the power grid
+    altLabel: Network Model
 
 # series:
 #   - identifier: ex:abcde
