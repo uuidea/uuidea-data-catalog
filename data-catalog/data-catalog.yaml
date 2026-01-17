@@ -14,7 +14,7 @@ datasets:
   - identifier: uuidea:alliander-grid-model-data
     title: Alliander grid model data
     description: |
-      In order to navigate the energy transition, and specifically network congestion, Alliander develops a lot of analysis tools to help them plan and operate the grid more effectiviely. In order to provide these tools with a common source of network data, two teams (one for medium voltage, one for low voltage) publish grid model data conform CGMES, with extensions where neccessary. These datasets are now the source for grid planning, including powerflow simulations and short circuit.
+      In order to navigate the energy transition, and specifically network congestion, Alliander develops a lot of analysis tools to help them plan and operate the grid more effectiviely. In order to provide these tools with a common source of network data, two teams (one for medium voltage, one for low voltage) publish grid model data conform CGMES, with extensions where neccessary. These datasets are now the source for grid planning, including powerflow simulations and short circuit. In my role as data architect, I assisted the two teams with data modelling questions as well as data architecture.
     publisher:
       name : Alliander
     # contactPoint: 
@@ -33,11 +33,33 @@ datasets:
     # inSeries: ex:abcde
     hasPolicy: plcy:confdential
 
+  - identifier: uuidea:mopo
+    title: mopo, European Dataset
+    description: |
+      In the context of the Horizon Europe project mopo, one of the deliverables is a long term energy development study within the EU. This dataset will contain all the data required to run that simulation.
+    publisher:
+      name : EPRI Europe
+    # contactPoint: 
+    #   hasEmail: my.name@example.com
+    status: planned
+    theme:
+      - uuidea:electricity
+      - uuidea:energy
+      - uuidea:energy-system-planning
+      - uuidea:horizon-europe
+    license:
+      title: to be determined
+    # temporal:
+    #   hasBeginning: 2024-06-01
+      # hasEnd: 2025-12-31  
+    # inSeries: ex:abcde
+    # hasPolicy: plcy:confdential
+
 
   - identifier: uuidea:eminent
     title: EMINENT interoperability maturyty assessment data
     description: |
-      During the int:net Horizon Europe project, the EMINENT Interoperability Maturity assessment was developed. This dataset contains the results of all the responses that were provided across different interoperability efforts that were evaluated.
+      During the int:net Horizon Europe project, the EMINENT Interoperability Maturity assessment was developed. This dataset contains the results of all the responses that were provided across different interoperability efforts that were evaluated. In my role as researcher, I was part of the team that designed the maturity model and the questionnaire and I developed the tooling and database.
     publisher:
       name : int:net project
     # contactPoint: 
@@ -81,7 +103,28 @@ concepts:
     identifier: uuidea:interoperability
     definition: |
       “Interoperability refers to the ability of diverse systems, organisations, and individuals to work together seamlessly through shared understanding and mutual compatibility. It is an emergent property that arises from the continuous development and refinement of standards, collaboration among stakeholders, and the dissemination of knowledge across technical, organisational, and societal boundaries.”  
+  - prefLabel: Horizon Europe
+    identifier: uuidea:horizon-europe
+    definition: |
+      Horizon Europe is the EU’s key funding programme for research and innovation.
 
+      It tackles climate change, helps to achieve the UN’s Sustainable Development Goals and boosts the EU’s competitiveness and growth.
+      
+      The programme facilitates collaboration and strengthens the impact of research and innovation in developing, supporting and implementing EU policies while tackling global challenges. It supports the creation and better diffusion of excellent knowledge and technologies.
+      
+      It creates jobs, fully engages the EU’s talent pool, boosts economic growth, promotes industrial competitiveness and optimises investment impact within a strengthened European Research Area.
+      
+      Legal entities from the EU and associated countries can participate
+    altLabel: HE
+  - prefLabel: Energy System Planning
+    identifier: uuidea:energy-system-planning
+    definition: The discipline of (long term) planning of the energy system infrastructure. 
+    altLabel: Network Model
+  - prefLabel: Energy
+    identifier: uuidea:energy
+    definition: |
+      Energy (from Ancient Greek ἐνέργεια (enérgeia) 'activity') is the quantitative property that is transferred to a body or to a physical system, recognizable in the performance of work and in the form of heat and light. Energy is a conserved quantity—the law of conservation of energy states that energy can be converted in form, but not created or destroyed. The unit of measurement for energy in the International System of Units (SI) is the joule (J). 
+    altLabel: Network Model     
 
 policies:
   - uid: plcy:open-information-policy
