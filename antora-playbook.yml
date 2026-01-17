@@ -3,7 +3,7 @@ site:
   start_page: data-catalog:data-catalog:uuidea_Data_Catalog.adoc
 content:
   sources: 
-  - url: . # https://uuidea.github.io/simple_data_catalog/
+  - url: http://data-catalog.uuidea.eu
     branches: main
     start_page: data-catalog:data-catalog:uuidea_Data_Catalog.adoc
     
