@@ -82,6 +82,20 @@ datasets:
       accessURL: https://raw.githubusercontent.com/int-net/EminentResultsDatabase/refs/heads/main/EminentResponses/EminentResponses.ttl
       format: rdf/turlte    
 
+  - identifier: sdcc:Catalog_of_simple_data_catalog_Catalogs
+    description: |
+      This catalog provides an overview of Catalogs that use the simple_data_catalog to publish their data. Contribution to this catalog is voluntary, but very much appreciated. Adding your data catalog to this one helps other find eachother and each others data. It allows us to build a community and make our data even more findable. 
+    title: Catalog of simple_data_catalog Catalogs
+    license: 
+      title: https://creativecommons.org/licenses/by-sa/4.0/
+    publisher:
+      name: https://www.linkedin.com/in/joep-van-genuchten-a6836751/[Joep van Genuchten]
+    distribution:
+     - identifier: https://data-catalog.uuidea.eu/data-catalog/data-catalog/_attachments/data-catalog.ttl
+       title: Catalog of simple_data_catalog Catalogs - RDF/Turtle
+       accessURL: https://data-catalog.uuidea.eu/data-catalog/data-catalog/_attachments/data-catalog.ttl format: rdf/turtle
+       format: rdf/turtle
+
 concepts:
   - prefLabel: Electricity
     identifier: uuidea:electricity
