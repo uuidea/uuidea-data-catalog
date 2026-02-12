@@ -93,7 +93,7 @@ datasets:
     distribution:
      - identifier: https://data-catalog.uuidea.eu/data-catalog/data-catalog/_attachments/data-catalog.ttl
        title: Catalog of simple_data_catalog Catalogs - RDF/Turtle
-       accessURL: https://data-catalog.uuidea.eu/data-catalog/data-catalog/_attachments/data-catalog.ttl format: rdf/turtle
+       accessURL: https://data-catalog.uuidea.eu/data-catalog/data-catalog/_attachments/data-catalog.ttl 
        format: rdf/turtle
 
 concepts:
