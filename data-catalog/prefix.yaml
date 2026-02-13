@@ -14,3 +14,4 @@ prefixes:
    dqv: http://www.w3.org/ns/dqv#
    ex: http://www.example.com/
    adms: http://www.w3.org/ns/adms#
+   sdcc: https://www.uuidea.eu/sdc-catalog/
